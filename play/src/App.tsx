@@ -1,4 +1,4 @@
-import { Button } from 'mz-design'
+import { Button } from '@mz-design/components'
 
 function App() {
   return (
