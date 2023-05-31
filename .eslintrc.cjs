@@ -26,7 +26,8 @@ module.exports = {
     'arrow-body-style': 'off',
     'prefer-arrow-callback': 'off',
     '@typescript-eslint/no-explicit-any': ['off'],
-    '@typescript-eslint/no-non-null-assertion': 'off'
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    'react/no-unknown-property': ['error', { ignore: ['css'] }]
   },
   settings: {
     react: {

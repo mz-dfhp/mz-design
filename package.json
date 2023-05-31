@@ -18,14 +18,19 @@
     "commit-msg": "npx --no-install commitlint -e"
   },
   "dependencies": {
+    "@emotion/hash": "^0.9.1",
+    "@emotion/react": "^11.11.0",
     "@mz-design/components": "workspace:^1.0.0",
     "@mz-design/utils": "workspace:^1.0.0",
+    "classnames": "^2.3.2",
+    "lodash-es": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
+    "@types/lodash-es": "^4.17.7",
     "@types/node": "^18.11.10",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",

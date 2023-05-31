@@ -1,3 +1,2 @@
-import Button from './Button'
-
-export { Button }
+export { default as Button } from './button'
+export { default as ConfigProvider } from './config-provider'
