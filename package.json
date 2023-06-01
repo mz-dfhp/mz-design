@@ -18,10 +18,9 @@
     "commit-msg": "npx --no-install commitlint -e"
   },
   "dependencies": {
-    "@emotion/hash": "^0.9.1",
-    "@emotion/react": "^11.11.0",
     "@ant-design/components": "workspace:^1.0.0",
     "@ant-design/utils": "workspace:^1.0.0",
+    "@emotion/react": "^11.11.0",
     "classnames": "^2.3.2",
     "lodash-es": "^4.17.21",
     "react": "^18.2.0",
