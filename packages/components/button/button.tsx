@@ -41,7 +41,7 @@ const button: React.FC<ButtonProps> = (props) => {
       className={classes}
       css={style}
       onClick={handleClick}
-      disabled={disabled || loading || false}
+      disabled={disabled || false}
     >
       {loading ? <span className={`${prefixClass}-btn-loading`}></span> : null}
       <span style={{ marginLeft: loading ? '5px' : 0 }}>{children}</span>

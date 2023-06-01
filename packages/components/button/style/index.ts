@@ -1,7 +1,10 @@
 import { css } from '@emotion/react'
-import { ThemeConfig } from '@mz-design/components/theme'
+import { defaultConfigType } from '@ant-design/components/theme'
 
-export function getButtonStyle(token: ThemeConfig['token'], prefix: string) {
+export function getButtonStyle(
+  token: defaultConfigType['token'],
+  prefix: defaultConfigType['prefixClass']
+) {
   const {
     colorDefault,
     colorPrimary,

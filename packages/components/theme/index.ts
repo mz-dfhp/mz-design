@@ -1,5 +1,9 @@
 import { createContext } from 'react'
 
+export type RecursivePartial<T> = {
+  [P in keyof T]?: RecursivePartial<T[P]>
+}
+
 export const defaultSeedToken = {
   fontSize: '14px',
   colorDefault: '#ffffff',
@@ -15,16 +19,14 @@ export const defaultSeedToken = {
   borderRadius: '6px'
 }
 
-export type AliasToken = Partial<typeof defaultSeedToken>
-
 export const defaultConfig = {
   prefixClass: 'ant',
   token: defaultSeedToken
 }
 
-export interface ThemeConfig {
-  prefixClass: string
-  token: Partial<AliasToken>
-}
+export type defaultConfigType = typeof defaultConfig
 
-export const DesignTokenContext = createContext<ThemeConfig>(defaultConfig)
+export type DesignTokenContextType = RecursivePartial<defaultConfigType>
+
+export const DesignTokenContext =
+  createContext<defaultConfigType>(defaultConfig)

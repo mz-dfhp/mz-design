@@ -30,7 +30,8 @@ function App() {
           <Button>default</Button>
           <Button type="link">link</Button>
           <Button type="dashed">dashed</Button>
-          <Button disabled>disabled</Button>
+          <Button>disabled</Button>
+          <Button loading>loading</Button>
         </div>
       </div>
       <div

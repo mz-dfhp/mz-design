@@ -1,10 +1,15 @@
 import React, { createContext, useContext } from 'react'
 import { merge as mergeDeep, cloneDeep } from 'lodash-es'
-import { DesignTokenContext, ThemeConfig, defaultConfig } from '../theme'
+import {
+  defaultConfigType,
+  defaultConfig,
+  DesignTokenContext,
+  DesignTokenContextType
+} from '../theme'
 
 export interface ConfigProviderProps {
   children: React.ReactNode
-  theme?: ThemeConfig
+  theme?: DesignTokenContextType
 }
 
 const ConfigContext = createContext({
@@ -14,7 +19,7 @@ const ConfigContext = createContext({
 const ConfigProvider: React.FC<ConfigProviderProps> = ({ children, theme }) => {
   const parentContext = useContext(ConfigContext)
   // 合并theme
-  const mergedTheme: ThemeConfig = mergeDeep(
+  const mergedTheme: defaultConfigType = mergeDeep(
     cloneDeep(parentContext.theme || defaultConfig),
     cloneDeep(theme)
   )!
