@@ -23,8 +23,8 @@
     "rootDir": ".", // 指定输出文件目录(用于输出)，用于控制输出目录结构
     "paths": {
       // 路径映射，相对于baseUrl
-      "@mz-design/*": ["packages/*"],
-      "mz-design": ["packages/components"]
+      "@ant-design/*": ["packages/*"],
+      "ant-design": ["packages/components"]
     }
   }
 }

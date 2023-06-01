@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
 import { ThemeConfig } from '@mz-design/components/theme'
 
-export function getButtonStyle(token: ThemeConfig['token']) {
+export function getButtonStyle(token: ThemeConfig['token'], prefix: string) {
   const {
     colorDefault,
     colorPrimary,
@@ -35,7 +35,7 @@ export function getButtonStyle(token: ThemeConfig['token']) {
       box-shadow: none;
     }
 
-    &.mz-btn {
+    &.${prefix}-btn {
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -54,54 +54,54 @@ export function getButtonStyle(token: ThemeConfig['token']) {
       }
     }
 
-    &.mz-btn-default {
+    &.${prefix}-btn-default {
       background-color: ${colorDefault};
       border-color: ${colorBorder};
       color: ${colorText};
-      &:hover:not(:disabled, .mz-btn-link) {
+      &:hover:not(:disabled, .${prefix}-btn-link) {
         color: ${colorPrimary};
         border-color: ${colorPrimary};
       }
     }
 
-    &.mz-btn-primary {
+    &.${prefix}-btn-primary {
       ${getTypeColor(colorPrimary, colorDefault)}
     }
 
-    &.mz-btn-success {
+    &.${prefix}-btn-success {
       ${getTypeColor(colorSuccess, colorDefault)}
     }
 
-    &.mz-btn-warning {
+    &.${prefix}-btn-warning {
       ${getTypeColor(colorWarning, colorDefault)}
     }
 
-    &.mz-btn-error {
+    &.${prefix}-btn-error {
       ${getTypeColor(colorError, colorDefault)}
     }
 
-    &.mz-btn-info {
+    &.${prefix}-btn-info {
       ${getTypeColor(colorInfo, colorDefault)}
     }
 
-    &.mz-btn-link {
+    &.${prefix}-btn-link {
       color: ${colorPrimary};
       background-color: transparent !important;
       border: none;
     }
 
-    &.mz-btn-dashed {
+    &.${prefix}-btn-dashed {
       border-style: dashed;
       background-color: ${colorDefault};
       border-color: ${colorBorder};
       color: ${colorText};
-      &:hover:not(:disabled, .mz-btn-link) {
+      &:hover:not(:disabled, .${prefix}-btn-link) {
         color: ${colorPrimary};
         border-color: ${colorPrimary};
       }
     }
 
-    &.mz-btn-block {
+    &.${prefix}-btn-block {
       display: flex;
       text-align: center;
       width: 100%;
@@ -113,20 +113,20 @@ export function getButtonStyle(token: ThemeConfig['token']) {
       color: ${colorDisabledText};
       cursor: not-allowed;
     }
-    .mz-btn-loading {
+    .${prefix}-btn-loading {
       width: 14.5px;
       height: 14.5px;
       border-radius: 50%;
       border: 2px solid #fff;
       border-bottom-color: ${colorPrimary};
       animation: rotate 1s linear infinite;
-    }
-    @keyframes rotate {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
       }
     }
   `

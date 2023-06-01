@@ -24,14 +24,14 @@ export type ButtonProps = {
 
 const button: React.FC<ButtonProps> = (props) => {
   const { children, className, onClick, type, disabled, block, loading } = props
-  const { token } = useContext(DesignTokenContext)
+  const { token, prefixClass } = useContext(DesignTokenContext)
   const classes = classNames(
-    'mz-btn',
-    `mz-btn-${type || 'default'}`,
-    `${block ? 'mz-btn-block' : ''}`,
+    `${prefixClass}-btn`,
+    `${prefixClass}-btn-${type || 'default'}`,
+    `${block ? `${prefixClass}-btn-block` : ''}`,
     className
   )
-  const style = getButtonStyle(token)
+  const style = getButtonStyle(token, prefixClass)
   const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     if (disabled || loading) return
     ;(onClick as React.MouseEventHandler<HTMLButtonElement>)?.(e)
@@ -43,7 +43,7 @@ const button: React.FC<ButtonProps> = (props) => {
       onClick={handleClick}
       disabled={disabled || loading || false}
     >
-      {loading ? <span className="mz-btn-loading"></span> : null}
+      {loading ? <span className={`${prefixClass}-btn-loading`}></span> : null}
       <span style={{ marginLeft: loading ? '5px' : 0 }}>{children}</span>
     </button>
   )

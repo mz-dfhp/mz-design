@@ -18,13 +18,13 @@ export const defaultSeedToken = {
 export type AliasToken = Partial<typeof defaultSeedToken>
 
 export const defaultConfig = {
+  prefixClass: 'ant',
   token: defaultSeedToken
 }
 
 export interface ThemeConfig {
+  prefixClass: string
   token: Partial<AliasToken>
 }
 
-export const DesignTokenContext = createContext<{
-  token: Partial<AliasToken>
-}>(defaultConfig)
+export const DesignTokenContext = createContext<ThemeConfig>(defaultConfig)

@@ -1,4 +1,4 @@
-import { Button, ConfigProvider } from '@mz-design/components'
+import { Button, ConfigProvider } from '@ant-design/components'
 
 function App() {
   return (
