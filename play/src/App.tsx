@@ -11,28 +11,30 @@ function App() {
           <Button type="primary">red</Button>
         </ConfigProvider>
       </ConfigProvider>
-      <div>
-        <div
-          style={{
-            display: 'flex',
-            gap: '20px',
-            margin: '20px 0',
-            flexWrap: 'wrap'
-          }}
-        >
-          <Button type="primary" loading>
-            Button
-          </Button>
-          <Button type="success">success</Button>
-          <Button type="warning">warning</Button>
-          <Button type="error">error</Button>
-          <Button type="info">info</Button>
-          <Button>default</Button>
-          <Button type="link">link</Button>
-          <Button type="dashed">dashed</Button>
-          <Button>disabled</Button>
-          <Button loading>loading</Button>
-        </div>
+      <div
+        style={{
+          display: 'flex',
+          gap: '20px',
+          margin: '20px 0',
+          flexWrap: 'wrap'
+        }}
+      >
+        <Button type="primary">Button</Button>
+        <Button type="success">success</Button>
+        <Button type="warning">warning</Button>
+        <Button type="error">error</Button>
+        <Button type="info">info</Button>
+        <Button>default</Button>
+        <Button link>link</Button>
+        <Button dashed>dashed</Button>
+        <Button dashed type="warning">
+          dashed
+        </Button>
+        <Button>disabled</Button>
+        <Button loading>loading</Button>
+        <Button type="primary" block>
+          block
+        </Button>
       </div>
       <div
         style={{
@@ -58,15 +60,56 @@ function App() {
           info
         </Button>
         <Button disabled>default</Button>
-        <Button type="link" disabled>
+        <Button link disabled>
           link
         </Button>
-        <Button type="dashed" disabled>
+        <Button dashed disabled>
           dashed
         </Button>
         <Button disabled>disabled</Button>
-        <Button type="primary" block loading>
+        <Button type="primary" block>
           Block
+        </Button>
+      </div>
+      <div
+        style={{
+          display: 'flex',
+          gap: '20px',
+          margin: '20px 0',
+          flexWrap: 'wrap'
+        }}
+      >
+        <Button type="primary" loading>
+          Button
+        </Button>
+        <Button type="success" loading>
+          success
+        </Button>
+        <Button type="warning" loading>
+          warning
+        </Button>
+        <Button type="error" loading>
+          error
+        </Button>
+        <Button type="info" loading>
+          info
+        </Button>
+        <Button loading>default</Button>
+        <Button type="warning" link loading>
+          link
+        </Button>
+        <Button type="primary" dashed loading>
+          dashed
+        </Button>
+        <Button dashed loading>
+          dashed
+        </Button>
+        <Button loading>loading</Button>
+        <Button block loading>
+          block
+        </Button>
+        <Button type="primary" block loading>
+          block
         </Button>
       </div>
     </div>

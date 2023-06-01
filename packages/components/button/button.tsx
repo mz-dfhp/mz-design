@@ -8,27 +8,35 @@ import { getButtonStyle } from './style'
 export type ButtonProps = {
   children?: React.ReactNode
   className?: string
-  onClick?: React.MouseEventHandler<HTMLButtonElement>
-  type?:
-    | 'primary'
-    | 'success'
-    | 'warning'
-    | 'error'
-    | 'info'
-    | 'link'
-    | 'dashed'
+  type?: 'primary' | 'success' | 'warning' | 'error' | 'info'
   disabled?: boolean
   block?: boolean
+  dashed?: boolean
+  link?: boolean
   loading?: boolean
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
 const button: React.FC<ButtonProps> = (props) => {
-  const { children, className, onClick, type, disabled, block, loading } = props
+  const {
+    children,
+    className,
+    type,
+    disabled,
+    block,
+    loading,
+    dashed,
+    link,
+    onClick
+  } = props
   const { token, prefixClass } = useContext(DesignTokenContext)
   const classes = classNames(
     `${prefixClass}-btn`,
     `${prefixClass}-btn-${type || 'default'}`,
     `${block ? `${prefixClass}-btn-block` : ''}`,
+    `${dashed ? `${prefixClass}-btn-dashed` : ''}`,
+    `${link ? `${prefixClass}-btn-link` : ''}`,
+    `${loading ? `${prefixClass}-btn-loading` : ''}`,
     className
   )
   const style = getButtonStyle(token, prefixClass)
@@ -43,8 +51,8 @@ const button: React.FC<ButtonProps> = (props) => {
       onClick={handleClick}
       disabled={disabled || false}
     >
-      {loading ? <span className={`${prefixClass}-btn-loading`}></span> : null}
-      <span style={{ marginLeft: loading ? '5px' : 0 }}>{children}</span>
+      {loading ? <span></span> : null}
+      <span>{children}</span>
     </button>
   )
 }
