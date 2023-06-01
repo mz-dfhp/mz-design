@@ -35,6 +35,12 @@ function App() {
         <Button type="primary" block>
           block
         </Button>
+        <Button type="primary" round>
+          round
+        </Button>
+        <Button type="primary" round block>
+          round
+        </Button>
       </div>
       <div
         style={{
@@ -69,6 +75,12 @@ function App() {
         <Button disabled>disabled</Button>
         <Button type="primary" block>
           Block
+        </Button>
+        <Button type="primary" round disabled>
+          round
+        </Button>
+        <Button type="primary" round block disabled>
+          round
         </Button>
       </div>
       <div
@@ -110,6 +122,12 @@ function App() {
         </Button>
         <Button type="primary" block loading>
           block
+        </Button>
+        <Button loading round>
+          round
+        </Button>
+        <Button loading round block>
+          round
         </Button>
       </div>
     </div>

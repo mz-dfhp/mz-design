@@ -62,6 +62,44 @@ export function getButtonStyle(
       }
     }
 
+    &.${prefix}-btn-animation {
+      &::after {
+        pointer-events: none;
+        z-index: -1;
+        content: '';
+        display: block;
+        position: absolute;
+        width: calc(100% + 8px);
+        height: calc(100% + 8px);
+        opacity: 0.5;
+        background: ${colorPrimary};
+        border-radius: ${borderRadius};
+        animation: ripple 0.6s ease-out;
+        @keyframes ripple {
+          0% {
+            width: calc(100% + 8px);
+            height: calc(100% + 8px);
+          }
+          20% {
+            transform: translateY(-2px) rotate(-1deg);
+          }
+          40% {
+            transform: translateY(2px) rotate(1deg);
+          }
+          60% {
+            transform: translateY(-2px) rotate(-1deg);
+          }
+          80% {
+            transform: translateY(2px) rotate(1deg);
+          }
+          100% {
+            transform: translateY(0) rotate(0);
+            opacity: 0.1;
+          }
+        }
+      }
+    }
+
     &.${prefix}-btn-default {
       background-color: ${colorDefault};
       border-color: ${colorBorder};
@@ -144,6 +182,12 @@ export function getButtonStyle(
         }
       }
     }
+    &.${prefix}-btn-round {
+      border-radius: 20px;
+      &::after {
+        border-radius: 20px;
+      }
+    }
   `
 }
 
@@ -170,6 +214,12 @@ function getTypeColor(color: string, colorDefault: string, prefix: string) {
           border: 2px solid ${color};
           border-bottom-color: ${colorDefault};
         }
+      }
+    }
+
+    &.${prefix}-btn-animation {
+      &::after {
+        background-color: ${color};
       }
     }
 
