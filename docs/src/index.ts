@@ -1,1 +1,1 @@
-export { default as Foo } from './Foo'
+export { Button, ConfigProvider, Box } from '@ant-design/components'
