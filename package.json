@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm -C play dev",
+    "dev:docs": "pnpm -C docs dev",
+    "build:docs": "pnpm -C docs docs:build",
     "lint": "npm run lint:eslint & npm run lint:prettier",
     "lint:eslint": "eslint --fix --cache --cache-location node_modules/.cache/eslint/",
     "lint:prettier": "prettier --write --cache --parser typescript \"**/*.[tj]s?(x)\"",

@@ -1,4 +1,4 @@
-import { Button, ConfigProvider } from '@ant-design/components'
+import { Button, ConfigProvider, Box } from '@ant-design/components'
 
 function App() {
   return (
@@ -11,14 +11,7 @@ function App() {
           <Button type="primary">red</Button>
         </ConfigProvider>
       </ConfigProvider>
-      <div
-        style={{
-          display: 'flex',
-          gap: '20px',
-          margin: '20px 0',
-          flexWrap: 'wrap'
-        }}
-      >
+      <Box>
         <Button type="primary">Button</Button>
         <Button type="success">success</Button>
         <Button type="warning">warning</Button>
@@ -41,15 +34,8 @@ function App() {
         <Button type="primary" round block>
           round
         </Button>
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          gap: '20px',
-          margin: '20px 0',
-          flexWrap: 'wrap'
-        }}
-      >
+      </Box>
+      <Box>
         <Button type="primary" disabled>
           Button
         </Button>
@@ -82,15 +68,8 @@ function App() {
         <Button type="primary" round block disabled>
           round
         </Button>
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          gap: '20px',
-          margin: '20px 0',
-          flexWrap: 'wrap'
-        }}
-      >
+      </Box>
+      <Box>
         <Button type="primary" loading>
           Button
         </Button>
@@ -129,7 +108,7 @@ function App() {
         <Button loading round block>
           round
         </Button>
-      </div>
+      </Box>
     </div>
   )
 }
