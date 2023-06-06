@@ -1,3 +1,8 @@
+---
+  nav: 组件
+  toc: content
+  mobile: false
+---
 # Button
 
 按钮用于开始一个即时操作。
