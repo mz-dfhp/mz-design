@@ -51,7 +51,7 @@ export function getButtonStyle(
       position: relative;
       text-align: center;
       align-self: flex-start;
-      padding: 8.5px 15px;
+      padding: 5px 15px;
       border-width: 1px;
       border-color: transparent;
       border-style: solid;
@@ -65,18 +65,19 @@ export function getButtonStyle(
     &.${prefix}-btn-animation {
       &::after {
         pointer-events: none;
-        z-index: -1;
+        z-index: 1;
         content: '';
         display: block;
         position: absolute;
         width: calc(100% + 8px);
         height: calc(100% + 8px);
-        opacity: 0.5;
+        opacity: 0;
         background: ${colorPrimary};
         border-radius: ${borderRadius};
         animation: ripple 0.6s ease-out;
         @keyframes ripple {
           0% {
+            opacity: 0.6;
             width: calc(100% + 8px);
             height: calc(100% + 8px);
           }
@@ -92,9 +93,12 @@ export function getButtonStyle(
           80% {
             transform: translateY(2px) rotate(1deg);
           }
+          90% {
+            transform: translateY(0) rotate(0);
+          }
           100% {
             transform: translateY(0) rotate(0);
-            opacity: 0.1;
+            opacity: 0;
           }
         }
       }

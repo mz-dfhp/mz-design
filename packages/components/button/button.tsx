@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 
 import classNames from 'classnames'
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, forwardRef } from 'react'
 import { DesignTokenContext } from '../theme'
 import { getButtonStyle } from './style'
 
@@ -18,7 +18,10 @@ export type ButtonProps = {
   onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
-const button: React.FC<ButtonProps> = (props) => {
+const InternalButton: React.ForwardRefRenderFunction<
+  HTMLButtonElement | HTMLAnchorElement,
+  ButtonProps
+> = (props, ref) => {
   const {
     children,
     className,
@@ -62,11 +65,12 @@ const button: React.FC<ButtonProps> = (props) => {
     handleAnimation()
     ;(onClick as React.MouseEventHandler<HTMLButtonElement>)?.(e)
   }
-
+  const buttonRef = (ref as any) || React.createRef<HTMLButtonElement>()
   return (
     <button
       className={classes}
       css={style}
+      ref={buttonRef}
       onClick={handleClick}
       disabled={disabled || false}
     >
@@ -75,4 +79,8 @@ const button: React.FC<ButtonProps> = (props) => {
     </button>
   )
 }
+
+const button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(
+  InternalButton
+)
 export default button
