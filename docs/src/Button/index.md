@@ -24,7 +24,6 @@ export default () => <>
 </>;
 ```
 
-
 ## link
 
 ```jsx
@@ -53,7 +52,6 @@ export default () => <>
 </>;
 ```
 
-
 ## block
 
 ```jsx
@@ -68,7 +66,6 @@ export default () => <>
 </>;
 ```
 
-
 ## round
 
 ```jsx
@@ -82,7 +79,6 @@ export default () => <>
     </Box>
 </>;
 ```
-
 
 ## loading
 
@@ -121,3 +117,16 @@ export default () => <>
     </Box>
 </>;
 ```
+
+### AP
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| type | 设置按钮类型 | `primary` \| `success` \| `warning` \| `error` \| `info` \| `default` | `default` |
+| link | 链接按钮 | boolean | false |
+| block | 将按钮宽度调整为其父宽度的选项 | boolean | false |
+| disabled | 设置按钮失效状态 | boolean | false |
+| loading | 设置按钮载入状态 | boolean | false |
+| round | 圆角按钮 | boolean | false |
+| className | 语义化结构 class | Record<SemanticDOM, string> | - |
+| onClick | 点击按钮时的回调 | (event: MouseEvent) => void | - |
