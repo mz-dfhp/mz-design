@@ -25,7 +25,7 @@ const InternalIcon: React.ForwardRefRenderFunction<
     fill: 'currentColor'
   }
   const { onClick, children, className, style, spin } = props
-  console.log(style)
+
   const iconRef = (ref as any) || React.createRef<HTMLButtonElement>()
 
   const { token, prefixClass } = useContext(DesignTokenContext)
