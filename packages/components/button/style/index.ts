@@ -5,7 +5,7 @@ import {
   getColorToLighten
 } from '@ant-design/components/theme/colors'
 
-export function getButtonStyle(
+export function getStyle(
   token: defaultConfigType['token'],
   prefix: defaultConfigType['prefixClass']
 ) {

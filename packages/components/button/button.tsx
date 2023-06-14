@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
 
 import classNames from 'classnames'
-import React, { useContext, useState, forwardRef } from 'react'
+import React, { useContext, useState, forwardRef, CSSProperties } from 'react'
 import { DesignTokenContext } from '../theme'
-import { getButtonStyle } from './style'
+import { getStyle } from './style'
 
 export type ButtonProps = {
   children?: React.ReactNode
@@ -15,6 +15,7 @@ export type ButtonProps = {
   link?: boolean
   loading?: boolean
   round?: boolean
+  style?: CSSProperties
   onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
@@ -32,6 +33,7 @@ const InternalButton: React.ForwardRefRenderFunction<
     dashed,
     link,
     round,
+    style,
     onClick
   } = props
   const { token, prefixClass } = useContext(DesignTokenContext)
@@ -49,7 +51,7 @@ const InternalButton: React.ForwardRefRenderFunction<
     `${round ? `${prefixClass}-btn-round` : ''}`,
     className
   )
-  const style = getButtonStyle(token, prefixClass)
+  const emotionCss = getStyle(token, prefixClass)
 
   const handleAnimation = () => {
     if (!animation) {
@@ -69,10 +71,11 @@ const InternalButton: React.ForwardRefRenderFunction<
   return (
     <button
       className={classes}
-      css={style}
+      css={emotionCss}
       ref={buttonRef}
       onClick={handleClick}
       disabled={disabled || false}
+      style={style}
     >
       {loading ? <span></span> : null}
       <span>{children}</span>

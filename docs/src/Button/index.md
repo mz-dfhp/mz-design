@@ -2,6 +2,7 @@
   nav: 组件
   toc: content
   mobile: false
+  order: 1
 ---
 # Button
 
@@ -128,5 +129,6 @@ export default () => <>
 | disabled | 设置按钮失效状态 | boolean | false |
 | loading | 设置按钮载入状态 | boolean | false |
 | round | 圆角按钮 | boolean | false |
-| className | 语义化结构 class | Record<SemanticDOM, string> | - |
+| className | className | string | - |
+| style | 例如 fontSize 和 color | CSSProperties | - |
 | onClick | 点击按钮时的回调 | (event: MouseEvent) => void | - |

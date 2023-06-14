@@ -1,1 +1,7 @@
-export { Button, ConfigProvider, Box } from '@ant-design/components'
+export {
+  Button,
+  ConfigProvider,
+  Box,
+  Icon,
+  Icons
+} from '@ant-design/components'
