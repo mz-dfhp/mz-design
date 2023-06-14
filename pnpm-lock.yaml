@@ -59,6 +59,7 @@ importers:
     specifiers:
       '@types/react': ^18.0.0
       '@types/react-dom': ^18.0.0
+      cross-env: ^7.0.3
       dumi: ^2.2.0
       father: ^4.1.0
       react: ^18.0.0
@@ -66,6 +67,7 @@ importers:
     devDependencies:
       '@types/react': registry.npmmirror.com/@types/react/18.2.7
       '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.2.4
+      cross-env: registry.npmmirror.com/cross-env/7.0.3
       dumi: registry.npmmirror.com/dumi/2.2.0_psemcf34ovg2dno52nagbe3daa
       father: registry.npmmirror.com/father/4.2.2
       react: registry.npmmirror.com/react/18.2.0
@@ -5543,6 +5545,16 @@ packages:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/create-require/-/create-require-1.1.1.tgz}
     name: create-require
     version: 1.1.1
+    dev: true
+
+  registry.npmmirror.com/cross-env/7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cross-env/-/cross-env-7.0.3.tgz}
+    name: cross-env
+    version: 7.0.3
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
+    dependencies:
+      cross-spawn: registry.npmmirror.com/cross-spawn/7.0.3
     dev: true
 
   registry.npmmirror.com/cross-spawn/5.1.0:
