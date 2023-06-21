@@ -89,7 +89,7 @@ export default () => <>
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | direction | 间距方向 | `vertical` \| `horizontal` | `vertical` |
-| align | 对齐方式 | `start` \| `end` \| `center` \| `baseline` \| - |
+| align | 对齐方式 | `start` \| `end` \| `center` \| `baseline` | - |
 | wrap | 是否自动换行 | boolean | false |
 | size | 间距大小 | number | 10 |
 | block | 将按钮宽度调整为其父宽度的选项 | boolean | false |
