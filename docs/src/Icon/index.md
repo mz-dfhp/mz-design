@@ -10,9 +10,9 @@
 ## 基本使用
 
 ```jsx
-import { Icon, Box, Icons } from 'design';
+import { Icon, Space, Icons } from 'design';
 const { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Close, Refresh } = Icons
-export default () => <Box>
+export default () => <Space>
   <Icon>
     <ArrowUp/>
   </Icon>
@@ -31,15 +31,15 @@ export default () => <Box>
   <Icon>
     <Refresh/>
   </Icon>
-</Box>;
+</Space>;
 ```
 
 ## spin
 
 ```jsx
-import { Icon, Box, Icons } from 'design';
+import { Icon, Space, Icons } from 'design';
 const { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Close, Refresh } = Icons
-export default () => <Box>
+export default () => <Space>
   <Icon spin>
     <ArrowUp/>
   </Icon>
@@ -58,15 +58,15 @@ export default () => <Box>
   <Icon spin>
     <Refresh/>
   </Icon>
-</Box>;
+</Space>;
 ```
 
 ## style
 
 ```jsx
-import { Icon, Box, Icons } from 'design';
+import { Icon, Space, Icons } from 'design';
 const { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Close, Refresh } = Icons
-export default () => <Box>
+export default () => <Space>
   <Icon style={{fontSize:'28px',color:'#1677ff'}}>
     <ArrowUp/>
   </Icon>
@@ -85,10 +85,10 @@ export default () => <Box>
   <Icon style={{fontSize:'28px',color:'#1677ff'}}>
     <Refresh/>
   </Icon>
-</Box>;
+</Space>;
 ```
 
-### API
+## API
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |

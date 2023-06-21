@@ -5,7 +5,7 @@ import { DesignTokenContext } from '../theme'
 import classNames from 'classnames'
 import { getStyle } from './style'
 
-export type IconProps = {
+export interface IconProps {
   onClick?: React.MouseEventHandler<HTMLSpanElement>
   children?: React.ReactNode
   className?: string

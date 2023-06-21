@@ -11,83 +11,83 @@
 ## 基本使用
 
 ```jsx
-import { Button, Box } from 'design';
+import { Button, Space } from 'design';
 
 export default () => <>
-    <Box>
+    <Space wrap block>
       <Button>default</Button>
       <Button type="primary">primary</Button>
       <Button type="success">success</Button>
       <Button type="warning">warning</Button>
       <Button type="error">error</Button>
       <Button type="info">info</Button>
-    </Box>
+    </Space>
 </>;
 ```
 
 ## link
 
 ```jsx
-import { Button, Box } from 'design';
+import { Button, Space } from 'design';
 
 export default () => <>
-    <Box>
+    <Space wrap block>
       <Button link>link</Button>
       <Button type="primary" link>link</Button>
       <Button type="success" link>link</Button>
-    </Box>
+    </Space>
 </>;
 ```
 
 ## dashed
 
 ```jsx
-import { Button, Box } from 'design';
+import { Button, Space } from 'design';
 
 export default () => <>
-    <Box>
+    <Space wrap block>
       <Button dashed>dashed</Button>
       <Button type="primary" dashed>dashed</Button>
       <Button type="success" dashed>dashed</Button>
-    </Box>
+    </Space>
 </>;
 ```
 
 ## block
 
 ```jsx
-import { Button, Box } from 'design';
+import { Button, Space } from 'design';
 
 export default () => <>
-    <Box>
+    <Space direction='horizontal' wrap block>
       <Button block>block</Button>
       <Button type="primary" block>block</Button>
       <Button type="success" block>block</Button>
-    </Box>
+    </Space>
 </>;
 ```
 
 ## round
 
 ```jsx
-import { Button, Box } from 'design';
+import { Button, Space } from 'design';
 
 export default () => <>
-    <Box>
+    <Space wrap block>
       <Button round>default</Button>
       <Button type="primary" round>primary</Button>
       <Button type="success" block round>block</Button>
-    </Box>
+    </Space>
 </>;
 ```
 
 ## loading
 
 ```jsx
-import { Button, Box } from 'design';
+import { Button, Space } from 'design';
 
 export default () => <>
-    <Box>
+    <Space wrap block>
       <Button loading>default</Button>
       <Button loading type="primary">primary</Button>
       <Button loading type="success">success</Button>
@@ -96,17 +96,17 @@ export default () => <>
       <Button loading type="info">info</Button>
       <Button loading link>link</Button>
       <Button loading type="primary" dashed>dashed</Button>
-    </Box>
+    </Space>
 </>;
 ```
 
 ## disabled
 
 ```jsx
-import { Button, Box } from 'design';
+import { Button, Space } from 'design';
 
 export default () => <>
-    <Box>
+    <Space wrap block>
       <Button disabled>default</Button>
       <Button disabled type="primary">primary</Button>
       <Button disabled type="success">success</Button>
@@ -115,11 +115,11 @@ export default () => <>
       <Button disabled type="info">info</Button>
       <Button disabled link>link</Button>
       <Button disabled dashed>dashed</Button>
-    </Box>
+    </Space>
 </>;
 ```
 
-### API
+## API
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |

@@ -82,22 +82,22 @@ export function getStyle(
             height: calc(100% + 8px);
           }
           20% {
-            transform: translateY(-2px) rotate(-1deg);
+            transform: translateY(-1px);
           }
           40% {
-            transform: translateY(2px) rotate(1deg);
+            transform: translateY(1px);
           }
           60% {
-            transform: translateY(-2px) rotate(-1deg);
+            transform: translateY(-1px);
           }
           80% {
-            transform: translateY(2px) rotate(1deg);
+            transform: translateY(1px);
           }
           90% {
-            transform: translateY(0) rotate(0);
+            transform: translateY(0);
           }
           100% {
-            transform: translateY(0) rotate(0);
+            transform: translateY(0);
             opacity: 0;
           }
         }
@@ -186,6 +186,7 @@ export function getStyle(
         }
       }
     }
+
     &.${prefix}-btn-round {
       border-radius: 20px;
       &::after {
@@ -227,11 +228,11 @@ function getTypeColor(color: string, colorDefault: string, prefix: string) {
       }
     }
 
-    &:hover {
+    &:hover:not(.${prefix}-btn-loading,:disabled) {
       background-color: ${getColorToLighten(color, 8)};
     }
 
-    &:active {
+    &:active:not(.${prefix}-btn-loading,:disabled) {
       background-color: ${getColorToDarken(color, 8)};
     }
 

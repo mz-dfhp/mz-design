@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
 
 import classNames from 'classnames'
-import React, { useContext, useState, forwardRef, CSSProperties } from 'react'
+import React, { useContext, useState, forwardRef } from 'react'
 import { DesignTokenContext } from '../theme'
 import { getStyle } from './style'
 
-export type ButtonProps = {
+export interface ButtonProps {
   children?: React.ReactNode
   className?: string
   type?: 'primary' | 'success' | 'warning' | 'error' | 'info'
@@ -15,7 +15,7 @@ export type ButtonProps = {
   link?: boolean
   loading?: boolean
   round?: boolean
-  style?: CSSProperties
+  style?: React.CSSProperties
   onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
