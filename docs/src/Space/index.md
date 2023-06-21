@@ -77,9 +77,9 @@ import { Button, Space } from 'design';
 
 export default () => <>
     <Space  wrap block size={50}>
-      <Button>block</Button>
-      <Button type="primary">block</Button>
-      <Button type="success">block</Button>
+      <Button>default</Button>
+      <Button type="primary">primary</Button>
+      <Button type="success">success</Button>
     </Space>
 </>;
 ```
