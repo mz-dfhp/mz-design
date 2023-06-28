@@ -1,9 +1,9 @@
 import { css } from '@emotion/react'
-import { defaultConfigType } from '@ant-design/components/theme'
+import { defaultConfigType } from '@mz-design/components/theme'
 import {
   getColorToDarken,
   getColorToLighten
-} from '@ant-design/components/theme/colors'
+} from '@mz-design/components/theme/colors'
 
 export function getStyle(
   token: defaultConfigType['token'],

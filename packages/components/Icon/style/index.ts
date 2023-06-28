@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { defaultConfigType } from '@ant-design/components/theme'
+import { defaultConfigType } from '@mz-design/components/theme'
 
 export function getStyle(
   token: defaultConfigType['token'],

@@ -20,7 +20,7 @@ export const defaultSeedToken = {
 }
 
 export const defaultConfig = {
-  prefixClass: 'ant',
+  prefixClass: 'mz',
   token: defaultSeedToken
 }
 
