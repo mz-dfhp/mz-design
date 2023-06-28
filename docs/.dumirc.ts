@@ -4,7 +4,7 @@ export default defineConfig({
   base: process.env.base || '/',
   publicPath: process.env.base || '/',
   themeConfig: {
-    name: 'design',
+    name: 'mz-design',
     socialLinks: { github: 'https://github.com/mz-dfhp/mz-design' },
     monorepoRedirect: {},
     footer: false

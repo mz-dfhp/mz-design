@@ -11,7 +11,7 @@
 ## 基本使用
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space wrap block>
@@ -28,7 +28,7 @@ export default () => <>
 ## link
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space wrap block>
@@ -42,7 +42,7 @@ export default () => <>
 ## dashed
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space wrap block>
@@ -56,7 +56,7 @@ export default () => <>
 ## block
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space direction='horizontal' wrap block>
@@ -70,7 +70,7 @@ export default () => <>
 ## round
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space wrap block>
@@ -84,7 +84,7 @@ export default () => <>
 ## loading
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space wrap block>
@@ -103,7 +103,7 @@ export default () => <>
 ## disabled
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space wrap block>

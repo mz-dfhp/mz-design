@@ -10,7 +10,7 @@
 ## 基本使用
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space wrap block>
@@ -27,7 +27,7 @@ export default () => <>
 ## direction
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space wrap block direction="horizontal">
@@ -41,7 +41,7 @@ export default () => <>
 ## align
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space wrap block align="start">
@@ -73,7 +73,7 @@ export default () => <>
 ## size
 
 ```jsx
-import { Button, Space } from 'design';
+import { Button, Space } from 'mz-design';
 
 export default () => <>
     <Space  wrap block size={50}>

@@ -2,7 +2,7 @@ import { css } from '@emotion/react'
 import { defaultConfigType } from '@mz-design/components/theme'
 
 export function getStyle(
-  token: defaultConfigType['token'],
+  _token: defaultConfigType['token'],
   prefix: defaultConfigType['prefixClass']
 ) {
   return css`

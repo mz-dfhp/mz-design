@@ -1,6 +1,6 @@
 ---
 hero:
-  title: design
+  title: mz-design
   description: react 组件库
   actions:
     - text: 开始上手

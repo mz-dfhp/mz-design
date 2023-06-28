@@ -10,7 +10,7 @@
 ## 基本使用
 
 ```jsx
-import { Icon, Space, Icons } from 'design';
+import { Icon, Space, Icons } from 'mz-design';
 const { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Close, Refresh } = Icons
 export default () => <Space>
   <Icon>
@@ -37,7 +37,7 @@ export default () => <Space>
 ## spin
 
 ```jsx
-import { Icon, Space, Icons } from 'design';
+import { Icon, Space, Icons } from 'mz-design';
 const { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Close, Refresh } = Icons
 export default () => <Space>
   <Icon spin>
@@ -64,7 +64,7 @@ export default () => <Space>
 ## style
 
 ```jsx
-import { Icon, Space, Icons } from 'design';
+import { Icon, Space, Icons } from 'mz-design';
 const { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Close, Refresh } = Icons
 export default () => <Space>
   <Icon style={{fontSize:'28px',color:'#1677ff'}}>

@@ -21,5 +21,5 @@ v14.19.1
 ## 安装
 
 ```bash
-pnpm add design
+pnpm add mz-design
 ```
