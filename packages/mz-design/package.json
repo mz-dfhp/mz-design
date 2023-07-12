@@ -1,0 +1,19 @@
+{
+  "name": "mz-design",
+  "version": "1.0.4",
+  "description": "一个 react ui 库",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "umd:main": "dist/index.umd.js",
+  "typings": "dist/mz-design/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "react-ui",
+    "react-design"
+  ],
+  "author": "mz-dfhp",
+  "license": "ISC"
+}

@@ -1,14 +1,12 @@
 {
   "private": true,
-  "name": "design",
-  "version": "1.0.0",
-  "description": "react-ui",
   "type": "module",
   "scripts": {
     "dev": "pnpm -C play dev",
     "dev:docs": "pnpm -C docs dev",
     "build:docs": "pnpm -C docs docs:build",
     "build:github": "pnpm -C docs docs:github",
+    "build:component": "rollup -c",
     "lint": "npm run lint:eslint & npm run lint:prettier",
     "lint:eslint": "eslint --fix --cache --cache-location node_modules/.cache/eslint/",
     "lint:prettier": "prettier --write --cache --parser typescript \"**/*.[tj]s?(x)\"",
@@ -21,10 +19,10 @@
     "commit-msg": "npx --no-install commitlint -e"
   },
   "dependencies": {
-    "@mz-design/components": "workspace:^1.0.0",
-    "@mz-design/utils": "workspace:^1.0.0",
     "@ctrl/tinycolor": "^3.6.0",
     "@emotion/react": "^11.11.0",
+    "@mz-design/components": "workspace:^1.0.0",
+    "@mz-design/utils": "workspace:^1.0.0",
     "classnames": "^2.3.2",
     "lodash-es": "^4.17.21",
     "react": "^18.2.0",
@@ -45,14 +43,12 @@
     "eslint-plugin-react": "^7.31.10",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "rollup": "^3.25.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.35.0",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^4.6.4"
-  },
-  "keywords": [
-    "react",
-    "react-ui",
-    "react-design"
-  ],
-  "author": "mz-dfhp",
-  "license": "ISC"
+  }
 }
